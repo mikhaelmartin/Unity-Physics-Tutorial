@@ -11,7 +11,6 @@ public class CustomRigidbodyFly : MonoBehaviour
     bool flyKeyPressed;
     private void Update()
     {
-
         flyKeyPressed = Input.GetKey(KeyCode.Space);
     }
 

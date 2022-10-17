@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571328, b: 0.3069218, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -294,7 +294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639006562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 2.82, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -315,8 +315,9 @@ GameObject:
   - component: {fileID: 1788971949}
   - component: {fileID: 1788971948}
   - component: {fileID: 1788971947}
+  - component: {fileID: 1788971953}
   m_Layer: 0
-  m_Name: Rigidbody 2
+  m_Name: SuperBouncy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,6 +432,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1788971953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788971946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df66b71f49c64fe46a6dfd33c70b90a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: SuperBouncy
+  textSize: 25
+  color: {r: 0, g: 0, b: 0, a: 1}
+  worldOffset: {x: 0, y: 1, z: 0}
 --- !u!1 &1905390238
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,8 +560,9 @@ GameObject:
   - component: {fileID: 1985505899}
   - component: {fileID: 1985505898}
   - component: {fileID: 1985505897}
+  - component: {fileID: 1985505903}
   m_Layer: 0
-  m_Name: Rigidbody
+  m_Name: Bouncy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -659,3 +677,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1985505903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985505896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df66b71f49c64fe46a6dfd33c70b90a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Bouncy
+  textSize: 25
+  color: {r: 0, g: 0, b: 0, a: 1}
+  worldOffset: {x: 0, y: 1, z: 0}

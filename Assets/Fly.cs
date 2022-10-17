@@ -18,6 +18,5 @@ public class Fly : MonoBehaviour
     {
         if (flyKeyPressed)
             rb.AddForce(Vector3.up * force, forceMode);
-
     }
 }

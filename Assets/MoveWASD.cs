@@ -5,8 +5,8 @@ using UnityEngine;
 public class MoveWASD : MonoBehaviour
 {
     [SerializeField] Rigidbody rb;
-    [SerializeField] Method method;   
-    
+    [SerializeField] Method method;
+
     [SerializeField] float force;
     [SerializeField] float velocity;
 
@@ -26,17 +26,13 @@ public class MoveWASD : MonoBehaviour
             Input.GetAxisRaw("Vertical")
         );
 
-        if(moveDir == Vector3.zero)
-            return; 
-
-        if(method == Method.Velocity)
-            rb.velocity = moveDir*velocity;
-
+        if (method == Method.Velocity && moveDir != Vector3.zero)
+            rb.velocity = moveDir * velocity;
     }
 
     private void FixedUpdate()
     {
-        if (method == Method.Force)
+        if (method == Method.Force && moveDir != Vector3.zero)
             rb.AddForce(moveDir * force);
     }
 }
